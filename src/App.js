@@ -41,6 +41,7 @@ import Propss from './Component/Propsss';
 import Propsss from './Component/Propsss';
 import Login from './Component/Login';
 import Logic from './Component/Logic';
+import CounterComponent from './Custom Hook/CounterComponent';
 
 function App() {
   return (
@@ -79,8 +80,7 @@ function App() {
   <Route path='/forms' element={<Forms/>}/>
     <Route path='/login' element={<Login/>}/>
   <Route path='/logic' element={<Logic/>}/>
-
-
+  <Route path='/count' element={<CounterComponent/>}/>  
   {/* <Route path='/abc' element={<UseEffect/>}/>
  
   <Route path='/' element={<SignInEvent/>}/>
@@ -99,9 +99,9 @@ function App() {
 
  </Routes>
  </BrowserRouter> 
- {/* <Propsss time= "2 o clock"/> */}
- {/* <Propsss time= "10 o clock"/>
- <Propsss time= "20 o clock"/> */}
+ <Propsss time= "2 o clock"/> 
+<Propsss time= "10 o clock"/>
+ <Propsss time= "20 o clock"/>
     </div>
   );
 }
