@@ -42,6 +42,7 @@ import Propsss from './Component/Propsss';
 import Login from './Component/Login';
 import Logic from './Component/Logic';
 import CounterComponent from './Custom Hook/CounterComponent';
+import { UserProfile } from './Component/UserContextExample';
 
 function App() {
   return (
@@ -81,6 +82,7 @@ function App() {
     <Route path='/login' element={<Login/>}/>
   <Route path='/logic' element={<Logic/>}/>
   <Route path='/count' element={<CounterComponent/>}/>  
+  <Route path='/use' element={<UserProfile/>}/>
   {/* <Route path='/abc' element={<UseEffect/>}/>
  
   <Route path='/' element={<SignInEvent/>}/>
