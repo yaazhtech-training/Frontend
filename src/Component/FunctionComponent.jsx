@@ -7,7 +7,7 @@ import Propsss from './Propsss';
 
 const FunctionComponent = () => {
 
-  const[ball, setball] = useState(200);//initiate const , let, var keyword
+  const[ball, setball] = useState(0);//initiate const , let, var keyword
 const [count, setCount ] = useState();
 
 
@@ -19,34 +19,27 @@ const [count, setCount ] = useState();
 
    
    function checkBall(){
-    if(ball>=0){ //   condition
-  setball(200); //  updating state
+    if(ball>=200){ //   condition
+  setball(0); //  updating state
     }}
 
 function updateNumber(){
   
   setball((prevstate)=>
-  {return prevstate -10})
+  {return prevstate +10})//-, *,
 }
-
-
 
 //in  return part CSS and Mapping
   return (
     <div>
-
-   <Propsss ball={ball} />
-      <h1 style={{fontSize:"40px", color:"violet" }}>
+ <h1 style={{fontSize:"50px", color:"violet" }}>
         I am going to count the number of balls : {ball}
       </h1>
       
-      <button size="lg "style={{color :"red", fontSize:"20px" }}
+      <button size="lg "style={{color :"red", fontSize:"25px" }}
 onClick={ updateNumber}> 
-add the ball
-  </button>
-
-
-   
+Click the ball
+  </button>   
     </div>
   )
 }

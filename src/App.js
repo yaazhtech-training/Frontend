@@ -101,9 +101,9 @@ function App() {
 
  </Routes>
  </BrowserRouter> 
- <Propsss time= "2 o clock"/> 
+ {/* <Propsss time= "2 o clock"/> 
 <Propsss time= "10 o clock"/>
- <Propsss time= "20 o clock"/>
+ <Propsss time= "20 o clock"/> */}
     </div>
   );
 }
