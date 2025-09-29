@@ -43,6 +43,19 @@ import Login from './Component/Login';
 import Logic from './Component/Logic';
 import CounterComponent from './Custom Hook/CounterComponent';
 import { UserProfile } from './Component/UserContextExample';
+import React, { Suspense } from 'react';
+import LazyLoading from './LazyLoading/LazyLoading';
+import New from './Abinaya/New';
+import MouseTracker from './AdvancedReact/RenderProps/MouseTracker';
+import Dog from './AdvancedReact/RenderProps/Dog';
+import MouseWithDog from './AdvancedReact/RenderProps/MouseWithDog';
+import Counter from './AdvancedReact/ErrorBoundary/Counter';
+import ErrorBoundaries from './AdvancedReact/ErrorBoundary/ErrorBoundaries';
+import UseMemo from './AdvancedReact/UseMemo';
+import PortalDemo from './AdvancedReact/PortalDemo';
+import WebWorkerExample from './AdvancedReact/Web Workers/WebWorkerExample';
+import HooksDemo from './HooksDemo';
+const LazyComponent = React.lazy(() => import('./Component/Logic')); 
 
 function App() {
   return (
@@ -83,6 +96,18 @@ function App() {
   <Route path='/logic' element={<Logic/>}/>
   <Route path='/count' element={<CounterComponent/>}/>  
   <Route path='/use' element={<UserProfile/>}/>
+  <Route path='/lazy' element={<LazyLoading/>}/>
+  <Route path='/new' element={<New/>}/>
+  <Route path='/usememo' element={<UseMemo/>}/>
+<Route path='/counter' element={
+  <ErrorBoundaries>
+    <Counter />
+  </ErrorBoundaries>
+}/>
+<Route path='/portal' element={<PortalDemo/>}/>
+<Route path='/WebWorkerExample' element={<WebWorkerExample/>}/>
+<Route path='/hookDemo' element={<HooksDemo/>}/>
+{/* <Route path='/counter' element={<Counter />}/> */}
   {/* <Route path='/abc' element={<UseEffect/>}/>
  
   <Route path='/' element={<SignInEvent/>}/>
@@ -104,6 +129,21 @@ function App() {
  {/* <Propsss time= "2 o clock"/> 
 <Propsss time= "10 o clock"/>
  <Propsss time= "20 o clock"/> */}
+  {/* <Suspense fallback={<div>Loading...</div>}> 
+        <LazyComponent/> 
+      </Suspense> */}
+
+{/* <MouseTracker
+          render={({ x, y }) => (
+            <h2>
+              The mouse position is ({x}, {y})
+            </h2>
+          )}
+         />    */}
+      {/* <MouseWithDog/>  */}
+     {/* <Dog/>  */}
+
+  
     </div>
   );
 }

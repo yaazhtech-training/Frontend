@@ -32,7 +32,7 @@ function updateNumber(){
 //in  return part CSS and Mapping
   return (
     <div>
- <h1 style={{fontSize:"50px", color:"violet" }}>
+ <h1 style={{fontSize:"30px", color:"violet" }}>
         I am going to count the number of balls : {ball}
       </h1>
       

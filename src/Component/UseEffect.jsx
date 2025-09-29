@@ -34,3 +34,23 @@ if(number > 5){
 }
 
 export default UseEffect
+
+
+const [state, setState] = useState(0);
+
+useEffect(()=>{
+code
+
+},[emptyArray])
+
+const functionName =()=>{
+
+
+
+
+  return(
+    <div>
+      
+      </div>
+  )
+}
