@@ -1,6 +1,9 @@
 //function Component
 /*
 Hooks techniques
+
+
+//stateless component
 */
 import React, { useEffect, useState } from 'react'
 import Propsss from './Propsss';

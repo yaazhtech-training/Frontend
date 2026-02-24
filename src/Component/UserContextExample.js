@@ -5,11 +5,14 @@ import React, { createContext, useContext, useState } from 'react';
 const UserContext = createContext();
 
 // 2. Provider component to wrap your app
+//colour, language, role, auth, theme, name
 export const UserProvider = ({ children }) => {
-	const [user, setUser] = useState({ name: 'John Doe', email: 'john@example.com' });
+	const [user, setUser] = useState({ name: 'John Doe', email: 'john@example.com', role: 'admin', color: 'blue', language: 'English', auth: true, theme: 'light' });
 	return (
 		<UserContext.Provider value={{ user, setUser }}>
 			{children}
+			// children represent all nested components that can access this context
+
 		</UserContext.Provider>
 	);
 };

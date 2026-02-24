@@ -85,7 +85,7 @@ function App() {
  <Route path='/tax' element={<TaxDedutions/>}/>
  <Route path='/inter' element={<Interview/>}/>
  <Route path='loanCal' element={<LoanCalculate/>}/>
- <Route path='/fun' element={<FunctionComponent/>}/>
+ <Route path = '/clock' element={<FunctionComponent/>}/>
  <Route path='/class' element={<ClassComponent/>}/>
    <Route path='/abi' element={<LifeCycle/>}/> 
   <Route path='/my' element={<MyComponent2/>}/>
